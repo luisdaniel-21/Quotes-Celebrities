@@ -6,4 +6,4 @@ import dagger.hilt.android.HiltAndroidApp
 @HiltAndroidApp
 class QuotesApp: Application()
 
-//Version Full Desde VSCODE
+//Version Full 
