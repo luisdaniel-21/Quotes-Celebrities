@@ -6,7 +6,7 @@
     android:id="@+id/viewContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/threecolors_background"
     tools:context=".presentation.view.QuoteRandomFragment">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -26,6 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/id"
+            android:layout_marginTop="20dp"
             tools:ignore="DuplicateClickableBoundsCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/quote"
+            android:layout_marginTop="15dp"
             tools:ignore="DuplicateClickableBoundsCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,6 +72,7 @@
             android:id="@+id/etAuthor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:hint="@string/author" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,10 +80,24 @@
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:text="@string/save"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:layout_marginTop="70dp"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilAuthor" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="228dp"
+        android:src="@mipmap/itvo_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
